@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Html/Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="max-w-6xl mx-auto py-6 px-4">
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2">
+                    <img src="imgs/logo.png" alt="Logo">
+                </div>
+
+                <!-- Menu desktop -->
+                <ul class="hidden md:flex gap-3">
+                    <li><a href="#" class="text-base text-black hover:text-gray-500">Product</a> <i
+                            class="fa fa-chevron-down text-black text-xs"></i></li>
+                    <li><a href="#" class="text-base text-black hover:text-gray-500">Team</a></li>
+                    <li><a href="#" class="text-base text-black hover:text-gray-500">Entreprise</a></li>
+                    <li><a href="#" class="text-base text-black hover:text-gray-500">Explore</a> <i
+                            class="fa fa-chevron-down text-black text-xs"></i></li>
+                    <li><a href="#" class="text-base text-black hover:text-gray-500">Marketplace</a></li>
+                    <li><a href="#" class="text-base text-black hover:text-gray-500">Pricing</a> <i
+                            class="fa fa-chevron-down text-black text-xs"></i></li>
+                </ul>
+            </div>
+
+            <div class="hidden md:flex gap-4 items-center">
+                <div class="relative">
+                    <input type="search"
+                        class="p-2 pr-10 rounded-lg bg-slate-900 text-white placeholder-gray-400 focus:outline-none"
+                        placeholder="Search DOML">
+                    <i class="fa fa-search absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                </div>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Sign in</a>
+                <a href="#" class="rounded-lg p-2 border-2 border-gray-600 hover:bg-gray-100">Sign up</a>
+            </div>
+
+            <!-- Bouton Toggler -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <i class="fa fa-bars text-2xl"></i>
+            </button>
+        </nav>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden flex flex-col items-center mt-4 space-y-4 text-center md:hidden">
+            <ul class="flex flex-col gap-3">
+                <li><a href="#" class="text-base text-black hover:text-gray-500">Product</a></li>
+                <li><a href="#" class="text-base text-black hover:text-gray-500">Team</a></li>
+                <li><a href="#" class="text-base text-black hover:text-gray-500">Entreprise</a></li>
+                <li><a href="#" class="text-base text-black hover:text-gray-500">Explore</a></li>
+                <li><a href="#" class="text-base text-black hover:text-gray-500">Marketplace</a></li>
+                <li><a href="#" class="text-base text-black hover:text-gray-500">Pricing</a></li>
+            </ul>
+            <div class="flex flex-col gap-2 items-center">
+                <a href="#" class="text-gray-600 hover:text-gray-900">Sign in</a>
+                <a href="#" class="rounded-lg p-2 border-2 border-gray-600 hover:bg-gray-100">Sign up</a>
+            </div>
+        </div>
+
+        <!-- Section principale -->
+        <main>
+            <section class="">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-10 my-16">
+
+                    <!-- Image en haut sur mobile -->
+                    <div class="md:hidden flex justify-center w-full">
+                        <img src="imgs/image 3.png" class="w-3/4 md:w-1/2 h-auto object-contain">
+                    </div>
+
+                    <!-- Texte centré sur mobile, aligné à gauche sur desktop -->
+                    <div class="flex-1 text-center md:text-left">
+                        <p
+                            class="font-normal bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 bg-clip-text text-transparent text-[32px] md:text-[70px]">
+                            AI Marketing.
+                        </p>
+                        <p class="text-normal text-[32px] md:text-[70px]">Optimized Reach.</p>
+                        <p class="font-normal text-xl mt-6">Our vision is to revolutionize the way brands and
+                            advertisers target, reach.</p>
+                        <hr class="bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] h-0.5 w-full my-10">
+                        <div class="">
+                            <button class="relative p-[2px] rounded-2xl overflow-hidden  text-center">
+                                <!-- Effet de bordure en gradient -->
+                                <span
+                                    class="absolute inset-0 bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 rounded-2xl"></span>
+
+                                <!-- Contenu du bouton avec fond opaque -->
+                                <span
+                                    class="relative flex items-center gap-2 px-6 py-1 bg-white text-black rounded-2xl">
+                                    Get Started
+                                    <i
+                                        class="fa fa-arrow-right text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500"></i>
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Image alignée correctement sur desktop -->
+                    <div class="hidden md:flex flex-1 justify-center">
+                        <img src="imgs/image 3.png" class="w-2/3 h-auto object-contain">
+                    </div>
+                </div>
+                <div class="mt-32 text-center hidden md:block">
+                    <div class="flex justify-between items-center gap-4 mt-16">
+                        <div class=""><img src="imgs/Group 22.png" alt=""></div>
+                        <div class=""><img src="imgs/Group 21.png" alt=""></div>
+                        <div class=""><img src="imgs/Group 19.png" alt=""></div>
+                        <div class=""><img src="imgs/Group 20.png" alt=""></div>
+                        <div class=""><img src="imgs/image 6 (Traced).png" alt=""></div>
+                        <div class=""><img src="imgs/Group 23.png" alt=""></div>
+                    </div>
+
+                    <div class="flex justify-between items-center gap-4 mt-16">
+                        <div><img src="imgs/Google cloud.png" alt=""></div>
+                        <div><img src="imgs/Ebay.png" alt=""></div>
+                        <div><img src="imgs/Tux.png" alt=""></div>
+                        <div><img src="imgs/Spotify.png" alt=""></div>
+                        <div><img src="imgs/Airbnb.png" alt=""></div>
+                        <div><img src="imgs/Facebook.png" alt=""></div>
+                        <div><img src="imgs/Coca Cola.png" alt=""></div>
+                    </div>
+
+                    <div class="flex justify-between items-center gap-4 mt-16 mb-6">
+                        <div><img src="imgs/Zoom.png" alt=""></div>
+                        <div><img src="imgs/Creative Cloud.png" alt=""></div>
+                        <div><img src="imgs/Netflix.png" alt=""></div>
+                        <div><img src="imgs/Discord.png" alt=""></div>
+                        <div><img src="imgs/Figma.png" alt=""></div>
+                        <div><img src="imgs/Paypal.png" alt=""></div>
+                        <div><img src="imgs/Adobe.png" alt=""></div>
+                    </div>
+                    <p class="">Trusted by the world’s most ambitious teams.</p>
+                </div>
+                <div class="text-center mt-16 block md:hidden">
+
+                    <div class="flex justify-between items-center gap-10 my-6">
+                        <div>
+                            <img src="imgs/Group 22.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="imgs/Group 21.png" alt="">
+                        </div>
+                        <div>
+                            <img src="imgs/Tux.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center gap-10 my-6">
+                        <div>
+                            <img src="imgs/Zoom.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="imgs/Creative Cloud.png" alt="">
+                        </div>
+                        <div>
+                            <img src="imgs/Ebay.png" alt="">
+                        </div>
+                    </div>
+                    <p class="">Trusted by the world’s most ambitious teams.</p>
+
+                </div>
+
+            </section>
+            <section class="flex flex-col md:flex-row justify-between items-center gap-10 my-16">
+                <!-- Image en haut sur mobile -->
+                <div class="md:hidden flex justify-center w-full">
+                    <img src="imgs/1.png" class="w-3/4 md:w-1/2 h-auto object-contain">
+                </div>
+
+                <!-- Texte centré sur mobile, aligné à gauche sur desktop -->
+                <div class="flex-1 text-center md:text-left">
+                    <p
+                        class="font-normal bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 bg-clip-text text-transparent text-[32px] md:text-[40px]">
+                        AI Marketing.
+                    </p>
+                    <p class="text-normal text-[32px] md:text-[40px]">Optimized Reach.</p>
+                    <p class="font-normal text-xl mt-6 text-xl">DOML is a digital media agency powered by AI technology
+                        providing real time,<span class="text-blue-500 font-bold">data-driven insights</span> on your
+                        business and audience. The mission of DOML is
+                        to create the best experiences for companies through intelligent insights, powerful analytics
+                        and <span class="text-blue-500 font-bold">strategic execution.</span> </p>
+                    <hr class="bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 h-0.5 w-full my-10">
+                    <div class="">
+                        <button class="relative p-[2px] rounded-2xl overflow-hidden  text-center">
+                            <!-- Effet de bordure en gradient -->
+                            <span
+                                class="absolute inset-0 bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 rounded-2xl"></span>
+
+                            <!-- Contenu du bouton avec fond opaque -->
+                            <span class="relative flex items-center gap-2 px-6 py-1 bg-white text-black rounded-2xl">
+                                Learn more
+                                <i
+                                    class="fa fa-arrow-right text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Image alignée correctement sur desktop -->
+                <div class="hidden md:flex flex-1 justify-center">
+                    <img src="imgs/1.png" class="w-2/3 h-auto object-contain">
+                </div>
+            </section>
+            <section class="flex flex-col md:flex-row justify-between items-center gap-10 my-32">
+                <!-- Image en haut sur mobile -->
+                <div class=" ">
+                    <img src="imgs/18.png" class="w-3/4 h-auto object-contain">
+                </div>
+
+                <!-- Texte centré sur mobile, aligné à gauche sur desktop -->
+                <div class="flex-1 text-center md:text-left">
+                    <p
+                        class="font-normal bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 bg-clip-text text-transparent text-[32px] md:text-[40px]">
+                        AI Marketing.
+                    </p>
+                    <p class="text-normal text-[32px] md:text-[40px]">Optimized Reach.</p>
+                    <p class="font-normal text-xl mt-6 text-xl">It's all about getting your message in front of the
+                        right audience and creating those valuable relationships. Learn More about how DOML can help you
+                        do just that - all with a simple, easy-to-use platform. </p>
+                    <hr class="bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 h-0.5 w-full my-10">
+                    <div class="">
+                        <button class="relative p-[2px] rounded-2xl overflow-hidden  text-center">
+                            <!-- Effet de bordure en gradient -->
+                            <span
+                                class="absolute inset-0 bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 rounded-2xl"></span>
+
+                            <!-- Contenu du bouton avec fond opaque -->
+                            <span class="relative flex items-center gap-2 px-6 py-1 bg-white text-black rounded-2xl">
+                                Learn more
+                                <i
+                                    class="fa fa-arrow-right text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <!-- caroussels -->
+            </section>
+            <section class="flex flex-col md:flex-row justify-between items-center gap-10 my-32">
+                <!-- Image en haut sur mobile -->
+                <div class="md:hidden flex justify-center w-full">
+                    <img src="imgs/50.png" class="w-3/4 md:w-1/2 h-auto object-contain">
+                </div>
+
+                <!-- Texte centré sur mobile, aligné à gauche sur desktop -->
+                <div class="flex-1 text-center md:text-left">
+                    <p
+                        class="font-normal bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 bg-clip-text text-transparent text-[32px] md:text-[40px]">
+                        AI Marketing.
+                    </p>
+                    <p class="text-normal text-[32px] md:text-[40px]">Optimized Reach.</p>
+                    <p class="font-normal text-xl mt-6 text-xl">DOML is a digital media agency powered by AI technology
+                        providing real time,<span class="text-blue-500 font-bold">data-driven insights</span> on your
+                        business and audience. The mission of DOML is
+                        to create the best experiences for companies through intelligent insights, powerful analytics
+                        and <span class="text-blue-500 font-bold">strategic execution.</span> </p>
+                    <hr class="bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 h-0.5 w-full my-10">
+                    <div class="">
+                        <button class="relative p-[2px] rounded-2xl overflow-hidden  text-center">
+                            <!-- Effet de bordure en gradient -->
+                            <span
+                                class="absolute inset-0 bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 rounded-2xl"></span>
+
+                            <!-- Contenu du bouton avec fond opaque -->
+                            <span class="relative flex items-center gap-2 px-6 py-1 bg-white text-black rounded-2xl">
+                                Learn more
+                                <i
+                                    class="fa fa-arrow-right text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Image alignée correctement sur desktop -->
+                <div class="hidden md:flex flex-1 justify-center">
+                    <img src="imgs/50.png" class="w-2/3 h-auto object-contain">
+                </div>
+            </section>
+            <section class="flex flex-col md:flex-row justify-between items-center gap-10 my-32">
+                <!-- Image en haut sur mobile -->
+                <div class=" ">
+                    <img src="imgs/22.png" class="w-3/4 h-auto object-contain">
+                </div>
+
+                <!-- Texte centré sur mobile, aligné à gauche sur desktop -->
+                <div class="flex-1 text-center md:text-left">
+                    <p
+                        class="font-normal bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 bg-clip-text text-transparent text-[32px] md:text-[40px]">
+                        AI Marketing.
+                    </p>
+                    <p class="text-normal text-[32px] md:text-[40px]">Optimized Reach.</p>
+                    <p class="font-normal text-xl mt-6 text-xl">It's all about getting your message in front of the
+                        right audience and creating those valuable relationships. Learn More about how DOML can help you
+                        do just that - all with a simple, easy-to-use platform. </p>
+                    <hr class="bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 h-0.5 w-full my-10">
+                    <div class="">
+                        <button class="relative p-[2px] rounded-2xl overflow-hidden  text-center">
+                            <!-- Effet de bordure en gradient -->
+                            <span
+                                class="absolute inset-0 bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500 rounded-2xl"></span>
+
+                            <!-- Contenu du bouton avec fond opaque -->
+                            <span class="relative flex items-center gap-2 px-6 py-1 bg-white text-black rounded-2xl">
+                                Learn more
+                                <i
+                                    class="fa fa-arrow-right text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+            <section class="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-10 my-32 bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] rounded-2xl p-2">
+                <div>
+                    <img src="imgs/7.png" alt="">
+                </div>
+                <div>
+                    <p class="text-3xl  md:text-5xl text-white">Get exponential reach via <span class="font-bold">AI
+                            Marketing</span>
+                    </p>
+                    <div class=" flex flex-col md:flex-row gap-4 items-center mt-6">
+                        <div class="w-full md:w-1/2">
+                            <input type="search" placeholder="Enter your work email"
+                                class="p-2 w-full rounded-full bg-white bg-opacity-25 text-white placeholder-white focus:outline-none">
+                        </div>
+                        <div>
+
+                            <button class="relative  rounded-2xl overflow-hidden  text-center">
+                                <span
+                                    class="relative flex items-center gap-2 px-6 py-1 bg-black text-white rounded-2xl">
+                                    Get in touch
+                                    <i
+                                        class="fa fa-arrow-right text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <div class="mt-32 text-center hidden md:block">
+                    <div class="flex justify-between items-center gap-4 mt-16">
+                        <div><img src="imgs/Google cloud.png" alt=""></div>
+                        <div><img src="imgs/Ebay.png" alt=""></div>
+                        <div><img src="imgs/Tux.png" alt=""></div>
+                        <div><img src="imgs/Spotify.png" alt=""></div>
+                        <div><img src="imgs/Airbnb.png" alt=""></div>
+                        <div><img src="imgs/Facebook.png" alt=""></div>
+                        <div><img src="imgs/Coca Cola.png" alt=""></div>
+                    </div>
+
+                    <div class="flex justify-between items-center gap-4 mt-16 mb-6">
+                        <div><img src="imgs/Zoom.png" alt=""></div>
+                        <div><img src="imgs/Creative Cloud.png" alt=""></div>
+                        <div><img src="imgs/Netflix.png" alt=""></div>
+                        <div><img src="imgs/Discord.png" alt=""></div>
+                        <div><img src="imgs/Figma.png" alt=""></div>
+                        <div><img src="imgs/Paypal.png" alt=""></div>
+                        <div><img src="imgs/Adobe.png" alt=""></div>
+                    </div>
+                    <p class="">Trusted by the world’s most ambitious teams.</p>
+                </div>
+                <div class="text-center block md:hidden">
+
+                    <div class="flex justify-between items-center gap-10 my-6">
+                        <div>
+                            <img src="imgs/Group 22.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="imgs/Group 21.png" alt="">
+                        </div>
+                        <div>
+                            <img src="imgs/Tux.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center gap-10 my-6">
+                        <div>
+                            <img src="imgs/Zoom.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="imgs/Creative Cloud.png" alt="">
+                        </div>
+                        <div>
+                            <img src="imgs/Ebay.png" alt="">
+                        </div>
+                    </div>
+                    <p class="">Trusted by the world’s most ambitious teams.</p>
+                </div>
+                <hr class="bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] h-0.5 w-full mt-6 md:mt-32">
+                <div class="flex flex-col md:flex-row justify-between items-center mt-4">
+                    <p>Copyright <i class="fa fa-copyright"></i> 2025 DOML. All rights reserved.</p>
+                    <p>Terms of Use Privacy Policy</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script pour le menu mobile -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        tailwind.config = {
+            variants: {
+                placeholder: ['responsive', 'focus'],
+            },
+        }
+    </script>
+</body>
+
+</html>
